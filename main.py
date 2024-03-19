@@ -24,19 +24,25 @@ def sample_wh():
           "text": {
             "text": ["test"]
             }
-        }
-      ],
-      "richContent": [
-        [
-          {
-            "type": "description",
-            "title": "Description title",
-            "text": [
-              "This is text line 1.",
-              "This is text line 2."
-            ]
+        },
+        {
+          "payload": {
+            "richContent": [
+                        [
+                            {
+                                "type": "chips",
+                                "options": [
+                                    { "text": "Option 1" },
+                                    { "text": "Option 2" },
+                                    { "text": "Option 3" }
+                                ]
+                            }
+                        ]
+                    ]
+
           }
-        ]
+
+        }
       ]
     }
   }
