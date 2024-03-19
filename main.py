@@ -19,15 +19,26 @@ def sample_wh():
         }
       },
     "fulfillment_response": {
-            "messages": [
-                {
-                    "text": {
-                        "text": ["test"]
-                    }
-                }
-
-            ]
+      "messages": [
+        {
+          "text": {
+            "text": ["test"]
+            }
         }
+      ],
+      "richContent": [
+        [
+          {
+            "type": "description",
+            "title": "Description title",
+            "text": [
+              "This is text line 1.",
+              "This is text line 2."
+            ]
+          }
+        ]
+      ]
+    }
   }
   response_json = json.dumps(output)
   return response_json
