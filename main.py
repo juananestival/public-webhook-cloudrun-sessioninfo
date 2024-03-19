@@ -17,7 +17,17 @@ def sample_wh():
       'parameters': {
         'userAuthenticated': 'y',
         }
-      }
+      },
+    "fulfillment_response": {
+            "messages": [
+                {
+                    "text": {
+                        "text": ["test"]
+                    }
+                }
+
+            ]
+        }
   }
   response_json = json.dumps(output)
   return response_json
