@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 @app.post("/samplewh")
 def sample_wh():
+  print(request.json)
   output = {
     'sessionInfo': {
       'parameters': {
